@@ -1,4 +1,4 @@
-app-id: net.waterfox.waterfox
+app-id: net.outbook.waterfox
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
@@ -33,10 +33,10 @@ modules:
     build-commands:
       - mkdir /app/opt
       - cp -r waterfox/ /app/opt/waterfox
-      - desktop-file-install --dir /app/share/applications net.waterfox.waterfox.desktop
+      - desktop-file-install --dir /app/share/applications net.outbook.waterfox.desktop
       - install -Dm644 /app/opt/waterfox/browser/chrome/icons/default/default256.png
-        /app/share/icons/hicolor/256x256/apps/net.waterfox.waterfox.png
-      - install -Dm644 net.waterfox.waterfox.appdata.xml -t /app/share/appdata
+        /app/share/icons/hicolor/256x256/apps/net.outbook.waterfox.png
+      - install -Dm644 net.outbook.waterfox.appdata.xml -t /app/share/appdata
       - install -Dm644 flatpak-prefs.js -t /app/opt/waterfox/browser/defaults/preferences/
       - ln -sf /app/opt/waterfox/waterfox-bin /app/bin/waterfox
     sources:
@@ -50,9 +50,9 @@ modules:
           version-pattern: G([0-9].[0-9]+[0-9]*.[0-9]+)
           url-template: https://cdn1.waterfox.net/waterfox/releases/G$version/Linux_x86_64/waterfox-G$version.tar.bz2
       - type: file
-        path: net.waterfox.waterfox.appdata.xml
+        path: net.outbook.waterfox.appdata.xml
       - type: file
-        path: net.waterfox.waterfox.desktop
+        path: net.outbook.waterfox.desktop
       - type: file
         path: flatpak-prefs.js
   - name: libnotify

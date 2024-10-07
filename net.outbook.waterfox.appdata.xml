@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>net.waterfox.waterfox</id>
+  <id>net.outbook.waterfox</id>
   
   <name>Waterfox</name>
   <summary>A lightweight, free and open source web browser built for the modern web</summary>
